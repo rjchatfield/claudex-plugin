@@ -1,0 +1,11 @@
+{
+  "name": "claudex",
+  "displayName": "Claudex - Claude Code powered Pokdex",
+  "description": "AI-powered Pokédex, team tracker and strategy advisor",
+  "version": "0.1.0",
+  "author": "Robert j Chatfield",
+  "skills": true,
+  "commands": true,
+  "hooks": true,
+  "data": true
+}
