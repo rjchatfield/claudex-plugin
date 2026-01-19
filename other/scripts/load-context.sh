@@ -18,9 +18,9 @@ USER_GAME_DIRECTORY_PATH=$CLAUDE_PROJECT_DIR
 
 # "Current"
 
-current_game_directory_path() {
-  if [ -f "$CURRENT_GAME_DIRECTORY_PATH" ]; then
-    echo "$CURRENT_GAME_DIRECTORY_PATH"
+current_game() {
+  if [ -f "$CURRENT_GAME" ]; then
+    echo "$CURRENT_GAME"
     exit 0
   fi
   local USER_INFO_PATH="${CLAUDE_PROJECT_DIR}/info.json"
@@ -32,13 +32,19 @@ current_game_directory_path() {
     echo "$USER_INFO_PATH not found"
     exit 1
   fi
-  echo "${CLAUDE_PLUGIN_ROOT}/other/games/${GAME_NAME}"
+  echo $GAME_NAME
 }
-CURRENT_GAME_DIRECTORY_PATH=$(current_game_directory_path)
+CURRENT_GAME=$(current_game)
+
+PROMPTS_DIRECTORY_PATH="$CLAUDE_PLUGIN_ROOT/other/prompts"
+CURRENT_GAME_PROMPTS_DIRECTORY_PATH="$PROMPTS_DIRECTORY_PATH/per-game/${CURRENT_GAME}"
+CURRENT_GAME_GENERATED_DIRECTORY_PATH="$CLAUDE_PLUGIN_ROOT/other/generated/${CURRENT_GAME}"
 
 current_game_info_path() {
-  echo "$(current_game_directory_path)/info.json"
+  echo "$CURRENT_GAME_GENERATED_DIRECTORY_PATH/info.json"
 }
+
+POKEAPI_DATA="${CLAUDE_PLUGIN_ROOT}/other/pokeapi-data/api/v2"
 
 # Versions
 
@@ -47,7 +53,7 @@ current_version_id() {
 }
 version_json_path() {
   local ID="$1"
-  echo "${CLAUDE_PLUGIN_ROOT}/other/pokeapi/version/$ID/index.json"
+  echo "$POKEAPI_DATA/version/$ID/index.json"
 }
 current_version_json_path() {
   echo "$(version_json_path $(current_version_id))"
@@ -60,7 +66,7 @@ current_version_group_id() {
 }
 version_group_json_path() {
   local ID="$1"
-  echo "${CLAUDE_PLUGIN_ROOT}/other/pokeapi/version-group/$ID/index.json"
+  echo "$POKEAPI_DATA/version-group/$ID/index.json"
 }
 current_version_group_json_path() {
   echo "$(version_group_json_path $(current_version_group_id))"
@@ -73,7 +79,7 @@ current_generation_id() {
 }
 generation_json_path() {
   local ID="$1"
-  echo "${CLAUDE_PLUGIN_ROOT}/other/pokeapi/generation/$ID/index.json"
+  echo "$POKEAPI_DATA/generation/$ID/index.json"
 }
 current_generation_json_path() {
   echo "$(generation_json_path $(current_generation_id))"
@@ -86,7 +92,7 @@ current_region_id() {
 }
 region_json_path() {
   local ID="$1"
-  echo "${CLAUDE_PLUGIN_ROOT}/other/pokeapi/region/$ID/index.json"
+  echo "$POKEAPI_DATA/region/$ID/index.json"
 }
 current_region_json_path() {
   echo "$(region_json_path $(current_region_id))"
@@ -98,7 +104,7 @@ GENERATION_NAME=$(jq -r '.name' $(current_generation_json_path))
 REGION_NAME=$(jq -r '.name' $(current_region_json_path))
 
 CONTEXT="
-$(cat "$CLAUDE_PLUGIN_ROOT/other/prompts/system_prompt.md")
+$(cat "$PROMPTS_DIRECTORY_PATH/system_prompt.md")
 
 # Game info
 
@@ -107,7 +113,7 @@ VERSION_GROUP: $VERSION_GROUP_NAME ($(current_version_group_id))
 GENERATION:    $GENERATION_NAME ($(current_generation_id))
 REGION:        $REGION_NAME ($(current_region_id))
 
-$(cat "$(current_game_directory_path)/recommendations.md")
+$(cat "$CURRENT_GAME_PROMPTS_DIRECTORY_PATH/recommendations.md")
 
 $(cat "$USER_GAME_DIRECTORY_PATH/team.md")
 
