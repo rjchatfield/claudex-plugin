@@ -1,14 +1,10 @@
-# Recommendations for Ultra Sun and Ultra Moon
-
-If asked for advice, here are a preset list of recommendations. The user's preferences and current progress <>. The user is allowed to pick other options.
-
 ## Recommended starter
 
-TBC
+Popplio
 
 ## Strongest Pokemon
 
-TBC
+- Magnemite
 
 ## Ultra Sun Specifics
 

@@ -1,38 +1,13 @@
 {
 	"generation": 7,
-	"version": {
-		"display_name": "Pokémon Ultra Sun",
-		"name": "ultra-sun",
-		"id": 29,
-	},
-	"version_group": {
-		"name": "ultra-sun-ultra-moon",
-		"id": 18,
-	},
-	"main_region": {
-		"name": "alola",
-		"id": 7,
-	},
+	"version": 29,
+	"version_group": 18,
+	"main_region": 7,
 	"pokedexes": [
-        {
-            "name": "updated-alola",
-            "id": 21,
-        },
-        {
-            "name": "updated-melemele",
-            "id": 22,
-        },
-        {
-            "name": "updated-akala",
-            "id": 23,
-        },
-        {
-            "name": "updated-ulaula",
-            "id": 24,
-        },
-        {
-            "name": "updated-poni",
-            "id": 25,
-        }
-    ],
+        21,
+        22,
+        23,
+        24,
+        25
+    ]
 }
