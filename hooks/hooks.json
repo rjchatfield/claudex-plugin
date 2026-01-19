@@ -1,0 +1,15 @@
+{
+  "description": "Load plugin context at session start",
+  "hooks": {
+    "SessionStart": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "${CLAUDE_PLUGIN_ROOT}/other/scripts/load-context.sh"
+          }
+        ]
+      }
+    ]
+  }
+}
