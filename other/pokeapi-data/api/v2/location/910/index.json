@@ -1,0 +1,31 @@
+{
+    "areas": [
+        {
+            "name": "galar-iceberg-ruins-area",
+            "url": "/api/v2/location-area/897/"
+        }
+    ],
+    "game_indices": [],
+    "id": 910,
+    "name": "galar-iceberg-ruins",
+    "names": [
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Eisberg-Ruinen"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Iceberg Ruins"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

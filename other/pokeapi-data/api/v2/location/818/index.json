@@ -1,0 +1,26 @@
+{
+    "areas": [],
+    "game_indices": [],
+    "id": 818,
+    "name": "cortondo",
+    "names": [
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Moldrid"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Cortondo"
+        }
+    ],
+    "region": {
+        "name": "paldea",
+        "url": "/api/v2/region/10/"
+    }
+}

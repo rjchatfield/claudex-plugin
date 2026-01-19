@@ -1,0 +1,31 @@
+{
+    "areas": [
+        {
+            "name": "max-lair-area",
+            "url": "/api/v2/location-area/905/"
+        }
+    ],
+    "game_indices": [],
+    "id": 917,
+    "name": "max-lair",
+    "names": [
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Dyna-Riesennest"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Max Lair"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "areas": [
+        {
+            "name": "sacred-plaza-area",
+            "url": "/api/v2/location-area/1006/"
+        }
+    ],
+    "game_indices": [],
+    "id": 1012,
+    "name": "sacred-plaza",
+    "names": [
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Platz der Huldigung"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Sacred Plaza"
+        }
+    ],
+    "region": {
+        "name": "hisui",
+        "url": "/api/v2/region/9/"
+    }
+}

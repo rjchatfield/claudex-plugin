@@ -1,0 +1,31 @@
+{
+    "areas": [
+        {
+            "name": "brava-arena-area",
+            "url": "/api/v2/location-area/956/"
+        }
+    ],
+    "game_indices": [],
+    "id": 962,
+    "name": "brava-arena",
+    "names": [
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "B\u00fchnenkampffeld"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Brava Arena"
+        }
+    ],
+    "region": {
+        "name": "hisui",
+        "url": "/api/v2/region/9/"
+    }
+}

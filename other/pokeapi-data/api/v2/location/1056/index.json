@@ -1,0 +1,31 @@
+{
+    "areas": [
+        {
+            "name": "roaming-kalos-area",
+            "url": "/api/v2/location-area/1182/"
+        }
+    ],
+    "game_indices": [],
+    "id": 1056,
+    "name": "roaming-kalos",
+    "names": [
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Kalos (wandernd)"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Kalos (Roaming)"
+        }
+    ],
+    "region": {
+        "name": "kalos",
+        "url": "/api/v2/region/6/"
+    }
+}

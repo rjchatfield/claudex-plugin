@@ -1,0 +1,26 @@
+{
+    "areas": [],
+    "game_indices": [],
+    "id": 861,
+    "name": "groundblight-shrine",
+    "names": [
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Schrein der unreinen Erde"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Groundblight Shrine"
+        }
+    ],
+    "region": {
+        "name": "paldea",
+        "url": "/api/v2/region/10/"
+    }
+}

@@ -1,0 +1,31 @@
+{
+    "areas": [
+        {
+            "name": "motostoke-outskirts-area",
+            "url": "/api/v2/location-area/907/"
+        }
+    ],
+    "game_indices": [],
+    "id": 919,
+    "name": "motostoke-outskirts",
+    "names": [
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Engine-Ortsrand"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Motostoke Outskirts"
+        }
+    ],
+    "region": {
+        "name": "galar",
+        "url": "/api/v2/region/8/"
+    }
+}

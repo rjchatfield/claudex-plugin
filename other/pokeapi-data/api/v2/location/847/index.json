@@ -1,0 +1,26 @@
+{
+    "areas": [],
+    "game_indices": [],
+    "id": 847,
+    "name": "paldea-west-province-area-one",
+    "names": [
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Westliche Zone 1"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "West Province (Area One)"
+        }
+    ],
+    "region": {
+        "name": "paldea",
+        "url": "/api/v2/region/10/"
+    }
+}

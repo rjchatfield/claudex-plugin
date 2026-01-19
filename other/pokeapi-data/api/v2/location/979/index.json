@@ -1,0 +1,31 @@
+{
+    "areas": [
+        {
+            "name": "firespit-island-area",
+            "url": "/api/v2/location-area/973/"
+        }
+    ],
+    "game_indices": [],
+    "id": 979,
+    "name": "firespit-island",
+    "names": [
+        {
+            "language": {
+                "name": "de",
+                "url": "/api/v2/language/6/"
+            },
+            "name": "Feuerspei-Insel"
+        },
+        {
+            "language": {
+                "name": "en",
+                "url": "/api/v2/language/9/"
+            },
+            "name": "Firespit Island"
+        }
+    ],
+    "region": {
+        "name": "hisui",
+        "url": "/api/v2/region/9/"
+    }
+}
